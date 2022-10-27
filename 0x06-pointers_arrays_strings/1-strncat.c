@@ -2,7 +2,7 @@
 
 /**
  * _strncat - concatenates two strings
- * @dest: first string to be concatenated 
+ * @dest: first string to be concatenated
  * @src: the string that will be concatenated
  * @n: number of characters
  * Return: a pointer to the resulting string dest
