@@ -7,25 +7,19 @@
  */
 
 char *rot13(char *n)
+
 {
-	int x, e = 13, i = 0;
-	char replace[] = {'A', 'N', 'a', 'n', 'B', 'O', 'b', 'o', 'C', 'P',
-		'c', 'p', 'D', 'Q', 'd', 'q', 'E', 'R', 'e', 'r', 'F', 'S', 'f',
-		's', 'G', 'T', 'g', 't', 'H', 'U', 'h', 'u', 'I', 'V', 'i', 'v',
-		'J', 'W', 'j', 'w', 'K', 'X', 'k', 'x', 'L', 'Y', 'l', 'y', 'M',
-		'Z', 'm', 'z'};
+	int i = 0;
 
 	while (n[i] != '\0')
 	{
-		for (x = 0; x <= 51; x++)
+		while (((n[i] >= 'a' && n[i] <= 'm') || (n[i] >= 'A' && n[i] <= 'M')))
 		{
-			if (n[i] == replace[x])
-			{
-				n[i] = n[i] + e;
-				x = 51;
-			}
-			e = e * -1;
+			n[i] += 13;
+			i++;
 		}
+		if ((n[i] >=  'n' && n[i] <= 'z') || (n[i] >=  'N' && n[i] <= 'Z'))
+			n[i] -= 13;
 		i++;
 	}
 	return (n);
