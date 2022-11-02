@@ -32,6 +32,12 @@ int _sqrt_recursion(int n)
 	}
 }
 
+/**
+ * sqrt_odd - handles odd numbers
+ * @s: odd number to start from
+ * @n: input number
+ * Return: sqrt of n
+ */
 
 int sqrt_odd(int s, int n)
 {
