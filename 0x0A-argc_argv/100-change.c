@@ -29,8 +29,7 @@ int main(int argc, char *argv[])
 }
 
 /**
- * give_change - find the minimum number of coins to make change
- * for an amount of money
+ * give_back - find the minimum number of coins to give back
  * @money: amount of money given in singles.
  * Return: min amount of coins. (INT)
  */
