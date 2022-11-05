@@ -1,5 +1,7 @@
 #include <stdio.h>
-#include "main.h"
+#include <stdlib.h>
+
+int give_change(int money);
 
 /**
  * main - prints the minimum number of coins to make change
