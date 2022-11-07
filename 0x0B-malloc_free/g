@@ -1,0 +1,11 @@
+#!/bin/bash
+
+git add .
+
+echo 'enter a message'
+
+read m
+
+git commit -m '$m'
+
+git push
